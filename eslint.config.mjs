@@ -46,6 +46,8 @@ const eslintConfig = [
       eqeqeq: ["error", "always"],
       "no-case-declarations": "error",
       "import/no-anonymous-default-export": "off",
+      "react/no-unescaped-entities": "off",
+      "@typescript-eslint/no-empty-object-type": "off",
       "prefer-arrow-callback": ["error", { allowNamedFunctions: false }],
       "func-style": ["error", "declaration", { allowArrowFunctions: false }],
       "@typescript-eslint/prefer-function-type": "error",

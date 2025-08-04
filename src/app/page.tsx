@@ -1,11 +1,23 @@
-import { Button } from "@/shared/components/ui/button";
+import { HeroSection } from "@/app/components/hero-section";
+import { AboutSection } from "@/app/components/about-section";
+import { CertificationSection } from "@/app/components/certification-section";
+import { ServicesSection } from "@/app/components/services-section";
+import { GallerySection } from "@/app/components/gallery-section";
+import { ContactSection } from "@/app/components/contact-section";
+import { Footer } from "@/app/components/footer";
+import { TestimonialsSection } from "@/app/components/testimonials-section";
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-sans sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-[32px] sm:items-start">
-        <Button>Hello</Button>
-      </main>
-    </div>
+    <main className="bg-san-black min-h-screen">
+      <HeroSection />
+      <AboutSection />
+      <CertificationSection />
+      <ServicesSection />
+      <GallerySection />
+      <TestimonialsSection />
+      <ContactSection />
+      <Footer />
+    </main>
   );
 }
