@@ -224,13 +224,12 @@ export function ContactSection() {
               </CardHeader>
               <CardContent>
                 <div className="bg-san-black border-san-metallic/20 flex aspect-video items-center justify-center rounded-lg border">
-                  <div className="text-center">
-                    <MapPin className="text-san-red mx-auto mb-4 h-16 w-16" />
-                    <p className="text-san-metallic">Hartă Google integrată</p>
-                    <p className="text-san-metallic mt-2 text-sm">
-                      San Detailing - Suceava, România
-                    </p>
-                  </div>
+                  <iframe
+                    loading="lazy"
+                    className="h-full w-full"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.117530672774!2d26.209173777632934!3d47.6432828711931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734ff02b1718c65%3A0xbdb084cbf22bdbfb!2sSAN%20Detailing!5e0!3m2!1sen!2sro!4v1754375234538!5m2!1sen!2sro"
+                  />
                 </div>
                 <div className="mt-4 text-center">
                   <p className="text-san-metallic text-sm">
