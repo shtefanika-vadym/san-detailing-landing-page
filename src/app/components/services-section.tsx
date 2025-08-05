@@ -19,7 +19,6 @@ export function ServicesSection() {
       title: "DETAILING EXTERIOR BRONZE",
       duration: "1-2 zile",
       services: [
-        "Spălare profesională prin metoda celor 2 găleți",
         "Decontaminare chimică și mecanică",
         "Polish într-un pas – eliminare pânză de păianjen, holograme și zgârieturi fine (corecție 60-70%)",
         "Aplicare dressinguri dedicate pe trimuri de plastic, anvelope și alte elemente",
@@ -36,7 +35,6 @@ export function ServicesSection() {
       title: "DETAILING EXTERIOR SILVER",
       duration: "2-3 zile",
       services: [
-        "Spălare profesională prin metoda celor 2 găleți",
         "Decontaminare chimică și mecanică",
         "Polish 2 pași – corecție zgârieturi medii și lustruire (corecție 70-90%)",
         "Polish trimuri lucioase",
@@ -55,7 +53,6 @@ export function ServicesSection() {
       title: "DETAILING EXTERIOR GOLD",
       duration: "3-4 zile",
       services: [
-        "Spălare profesională prin metoda celor 2 găleți",
         "Decontaminare chimică și mecanică",
         "Polish 3 pași – corecție zgârieturi adânci și lustruire (corecție 90-95%)",
         "Polish trimuri lucioase",
@@ -71,6 +68,67 @@ export function ServicesSection() {
         hatchback: "2500 lei",
         sedan: "3000 lei",
         suv: "3500 lei",
+      },
+    },
+  ];
+
+  const interiorPackages = [
+    {
+      icon: Star,
+      title: "DETAILING INTERIOR BRONZE",
+      services: [
+        "Curățare plafon și accesorii",
+        "Curățare scaune și banchetă",
+        "Curățare bord, volan, consola centrală",
+        "Curățare fețe de uși",
+        "Curățare chedere uși și caroserie",
+        "Curățare mochete și capitonaje portbagaj",
+        "Hidratare piele",
+      ],
+      pricing: {
+        hatchback: "500 lei",
+        sedan: "600 lei",
+        suv: "700 lei",
+      },
+    },
+    {
+      icon: Award,
+      title: "DETAILING INTERIOR SILVER",
+      services: [
+        "Curățare plafon și accesorii",
+        "Curățare scaune și banchetă",
+        "Curățare bord, volan, consola centrală",
+        "Curățare fețe de uși",
+        "Curățare chedere uși și caroserie",
+        "Curățare mochete și capitonaje portbagaj",
+        "Protecție UV elemente din plastic",
+        "Aplicare tratament piele",
+      ],
+      pricing: {
+        hatchback: "600 lei",
+        sedan: "700 lei",
+        suv: "800 lei",
+      },
+    },
+    {
+      icon: Crown,
+      title: "DETAILING INTERIOR GOLD",
+      services: [
+        "Curățare plafon și accesorii",
+        "Curățare scaune și banchetă",
+        "Curățare bord, volan, consola centrală",
+        "Curățare fețe de uși",
+        "Curățare chedere uși și caroserie",
+        "Curățare mochetă și capitonaje portbagaj",
+        "Aplicare protecție ceramică piele",
+        "Protecție UV elemente din plastic",
+        "Polish trimuri",
+        "Igienizare climă, eliminare mirosuri neplăcute și bacterii",
+      ],
+      pricing: {
+        hatchback: "800 lei",
+        sedan: "900 lei",
+        suv: "1000 lei",
       },
     },
   ];
@@ -167,6 +225,69 @@ export function ServicesSection() {
                   <CardDescription className="text-san-metallic">
                     Durata: {pkg.duration}
                   </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <ul className="text-san-metallic space-y-2 text-sm">
+                      {pkg.services.map((service, idx) => (
+                        <li key={idx} className="flex items-start">
+                          <span className="text-san-red mr-2">•</span>
+                          {service}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
+                      <div className="font-semibold text-white">
+                        <div>
+                          Hatchback:{" "}
+                          <span className="text-san-red">
+                            {pkg.pricing.hatchback}
+                          </span>
+                        </div>
+                        <div>
+                          Coupe/Sedan/Break:{" "}
+                          <span className="text-san-red">
+                            {pkg.pricing.sedan}
+                          </span>
+                        </div>
+                        <div>
+                          SUV:{" "}
+                          <span className="text-san-red">
+                            {pkg.pricing.suv}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <h3 className="mb-8 text-center text-3xl font-bold text-white">
+            Pachete <span className="text-san-red">Detailing Interior</span>
+          </h3>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            {interiorPackages.map((pkg, index) => (
+              <Card
+                key={index}
+                className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform cursor-pointer transition-all duration-300 hover:scale-105"
+                onMouseEnter={() => setHoveredPackage(`ext-${index}`)}
+                onMouseLeave={() => setHoveredPackage(null)}
+              >
+                <CardHeader className="text-center">
+                  <pkg.icon
+                    className={`mx-auto mb-4 h-12 w-12 transition-colors duration-300 ${
+                      hoveredPackage === `ext-${index}`
+                        ? "text-san-red"
+                        : "text-san-metallic"
+                    }`}
+                  />
+                  <CardTitle className="text-xl text-white">
+                    {pkg.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">

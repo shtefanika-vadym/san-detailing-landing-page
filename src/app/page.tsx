@@ -5,11 +5,13 @@ import { ServicesSection } from "@/app/components/services-section";
 import { GallerySection } from "@/app/components/gallery-section";
 import { ContactSection } from "@/app/components/contact-section";
 import { Footer } from "@/app/components/footer";
+import { Toaster } from "@/shared/components/ui/sonner";
 import { TestimonialsSection } from "@/app/components/testimonials-section";
 
 export default function Home() {
   return (
     <main className="bg-san-black min-h-screen">
+      <Toaster />
       <HeroSection />
       <AboutSection />
       <CertificationSection />

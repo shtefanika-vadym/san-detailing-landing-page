@@ -11,14 +11,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/shared/components/ui/card";
+import { toast } from "sonner";
+import axios from "axios";
 
 export function ContactSection() {
-  // const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
-    phone: "",
     message: "",
+    phoneNumber: "",
   });
 
   function handleInputChange(
@@ -31,21 +31,28 @@ export function ContactSection() {
     }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
     // Simulate form submission
-    // toast({
-    //   title: "Mesaj trimis cu succes!",
-    //   description: "Vă vom contacta în cel mai scurt timp posibil.",
-    // });
+    toast(
+      <>
+        <p>Mesaj trimis cu succes!</p>
+        <p>Vă vom contacta în cel mai scurt timp posibil.</p>
+      </>,
+    );
+
+    await axios({
+      method: "POST",
+      data: formData,
+      url: `${process.env.NEXT_PUBLIC_API_BASE_URL}/send-whatsapp`,
+    });
 
     // Reset form
     setFormData({
       name: "",
-      email: "",
-      phone: "",
       message: "",
+      phoneNumber: "",
     });
   }
 
@@ -121,35 +128,17 @@ export function ContactSection() {
 
                 <div>
                   <label
-                    htmlFor="email"
-                    className="text-san-metallic mb-2 block font-medium"
-                  >
-                    Email *
-                  </label>
-                  <Input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="bg-san-light-gray border-san-metallic/30 focus:border-san-red text-white"
-                    placeholder="email@exemplu.ro"
-                  />
-                </div>
-
-                <div>
-                  <label
                     htmlFor="phone"
                     className="text-san-metallic mb-2 block font-medium"
                   >
-                    Număr Telefon
+                    Număr Telefon *
                   </label>
                   <Input
                     type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    required
+                    value={formData.phoneNumber}
                     onChange={handleInputChange}
                     className="bg-san-light-gray border-san-metallic/30 focus:border-san-red text-white"
                     placeholder="+40 xxx xxx xxx"
