@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: 'https://www.sandetailing.ro/',
   generateRobotsTxt: true,
-  changefreq: 'weekly',
+  changefreq: 'hourly',
   priority: 0.9,
   exclude: ['/404', '/500'],
 };
