@@ -5,7 +5,7 @@ export function Header() {
   return (
     <nav className="absolute top-0 right-0 left-0 z-50 p-6">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
-        <div className="flex items-center space-x-3">
+        <Link href="/" className="flex cursor-pointer items-center space-x-3">
           <Image
             src="/logo.png"
             alt="San Detailing Logo"
@@ -14,7 +14,7 @@ export function Header() {
             className="h-16 w-auto"
             priority
           />
-        </div>
+        </Link>
         <div className="hidden space-x-8 md:flex">
           <Link
             href="/#despre-noi"

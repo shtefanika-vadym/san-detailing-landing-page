@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 import { Award, Star, Shield } from "lucide-react";
 
 export function CertificationSection() {
@@ -20,11 +20,13 @@ export function CertificationSection() {
           {/* Specialist Photo and Info */}
           <div className="text-center lg:text-left">
             <div className="relative mb-6 inline-block">
-              {/*<img*/}
-              {/*  src="/lovable-uploads/1067c2db-8921-4a87-b387-2c05e4fcca25.png"*/}
-              {/*  alt="Specialist San Detailing Acreditat"*/}
-              {/*  className="h-auto max-w-full rounded-lg shadow-2xl"*/}
-              {/*/>*/}
+              <Image
+                width={400}
+                height={533}
+                src="/partner-carlexx.jpg"
+                alt="Specialist San Detailing Acreditat"
+                className="h-auto max-w-full rounded-lg shadow-2xl"
+              />
               <div className="bg-san-red absolute -right-4 -bottom-4 rounded-full p-3 text-white">
                 <Award className="h-6 w-6" />
               </div>

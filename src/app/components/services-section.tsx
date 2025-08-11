@@ -17,7 +17,7 @@ const servicesData: ServicesDataType = servicesDataRaw;
 export function ServicesSection() {
   const [hoveredPackage, setHoveredPackage] = useState<string | null>(null);
 
-  const { exterior, interior, separate } = servicesData;
+  const { exterior, interior, separate, combined } = servicesData;
 
   return (
     <section id="servicii" className="bg-san-light-gray py-20">
@@ -142,6 +142,64 @@ export function ServicesSection() {
                           </li>
                         ))}
                       </ul>
+                      <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
+                        <div className="font-semibold text-white">
+                          <div>
+                            Hatchback:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.hatchback}
+                            </span>
+                          </div>
+                          <div>
+                            Coupe/Sedan/Break:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.sedan}
+                            </span>
+                          </div>
+                          <div>
+                            SUV:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.suv}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <h3 className="mb-8 text-center text-3xl font-bold text-white">
+            Pachete <span className="text-san-red">Interior + Exterior</span>
+          </h3>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+            {combined.map((pkg, index: number) => {
+              const Icon = getServiceIcon(pkg.icon);
+              return (
+                <Card
+                  key={index}
+                  className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform cursor-pointer transition-all duration-300 hover:scale-105"
+                  onMouseEnter={() => setHoveredPackage(`int-${index}`)}
+                  onMouseLeave={() => setHoveredPackage(null)}
+                >
+                  <CardHeader className="text-center">
+                    <Icon
+                      className={`mx-auto mb-4 h-12 w-12 transition-colors duration-300 ${
+                        hoveredPackage === `int-${index}`
+                          ? "text-san-red"
+                          : "text-san-metallic"
+                      }`}
+                    />
+                    <CardTitle className="text-xl text-white">
+                      {pkg.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
                       <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
                         <div className="font-semibold text-white">
                           <div>

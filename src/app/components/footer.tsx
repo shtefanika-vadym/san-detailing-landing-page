@@ -12,7 +12,10 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Logo and Description */}
           <div className="md:col-span-2">
-            <div className="mb-6 flex items-center space-x-3">
+            <Link
+              href="/"
+              className="mb-6 flex cursor-pointer items-center space-x-3"
+            >
               <Image
                 src="/logo.png"
                 alt="San Detailing Logo"
@@ -21,7 +24,7 @@ export function Footer() {
                 className="h-8 w-auto"
                 priority
               />
-            </div>
+            </Link>
             <p className="text-san-metallic mb-6 leading-relaxed">
               Precizie în Detalii - Servicii premium de detailing auto în
               Suceava. Transformăm fiecare vehicul într-o operă de artă prin
@@ -72,7 +75,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="#about"
+                  href="/#despre-noi"
                   className="text-san-metallic hover:text-san-red transition-colors duration-300"
                 >
                   Despre Noi
@@ -80,7 +83,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/#servicii"
                   className="text-san-metallic hover:text-san-red transition-colors duration-300"
                 >
                   Servicii
@@ -88,7 +91,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#gallery"
+                  href="/#galerie"
                   className="text-san-metallic hover:text-san-red transition-colors duration-300"
                 >
                   Galerie
@@ -96,7 +99,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className="text-san-metallic hover:text-san-red transition-colors duration-300"
                 >
                   Contact

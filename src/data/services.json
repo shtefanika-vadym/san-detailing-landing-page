@@ -88,6 +88,56 @@
       }
     }
   ],
+  "combined": [
+    {
+      "slug": "interior-exterior-bronze",
+      "title": "PACHET INTERIOR + EXTERIOR BRONZE",
+      "icon": "Star",
+      "description": "Acest pachet include detailing exterior Bronze + detailing interior Bronze",
+      "pricing": {
+        "hatchback": "1300 lei",
+        "sedan": "1600 lei",
+        "suv": "2000 lei"
+      },
+      "seo": {
+        "title": "Pachet Detailing Interior + Exterior Bronze Suceava | San Detailing",
+        "description": "Alege pachetul Bronze pentru detailing complet interior și exterior la cel mai bun preț în Suceava!",
+        "keywords": "detailing bronze, pachet interior exterior, detailing Suceava, polish auto, curățare interior"
+      }
+    },
+    {
+      "slug": "interior-exterior-silver",
+      "title": "PACHET INTERIOR + EXTERIOR SILVER",
+      "icon": "Award",
+      "description": "Acest pachet include detailing exterior Silver + detailing interior Silver",
+      "pricing": {
+        "hatchback": "2200 lei",
+        "sedan": "2600 lei",
+        "suv": "3200 lei"
+      },
+      "seo": {
+        "title": "Pachet Detailing Interior + Exterior Silver Suceava | San Detailing",
+        "description": "Pachet Silver: detailing complet interior și exterior, servicii profesionale în Suceava.",
+        "keywords": "detailing silver, pachet interior exterior, detailing Suceava, polish auto, curățare interior"
+      }
+    },
+    {
+      "slug": "interior-exterior-gold",
+      "title": "PACHET INTERIOR + EXTERIOR GOLD",
+      "icon": "Crown",
+      "description": "Acest pachet include detailing exterior Gold + detailing interior Gold",
+      "pricing": {
+        "hatchback": "3000 lei",
+        "sedan": "3500 lei",
+        "suv": "4000 lei"
+      },
+      "seo": {
+        "title": "Pachet Detailing Interior + Exterior Gold Suceava | San Detailing",
+        "description": "Pachet Gold: cel mai complet detailing interior și exterior, rezultate premium în Suceava.",
+        "keywords": "detailing gold, pachet interior exterior, detailing Suceava, polish auto, curățare interior"
+      }
+    }
+  ],
   "interior": [
     {
       "slug": "interior-bronze",

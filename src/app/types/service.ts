@@ -10,14 +10,16 @@ export type ServiceBaseType = {
   };
 };
 
+export type ServicePriceType = {
+  hatchback: string;
+  sedan: string;
+  suv: string;
+};
+
 export type ServiceWithServicesType = ServiceBaseType & {
   duration?: string;
   services: { name: string; desc?: string }[];
-  pricing: {
-    hatchback: string;
-    sedan: string;
-    suv: string;
-  };
+  pricing: ServicePriceType;
 };
 
 export type ServiceSeparateType = ServiceBaseType & {
@@ -28,4 +30,5 @@ export type ServicesDataType = {
   exterior: ServiceWithServicesType[];
   interior: ServiceWithServicesType[];
   separate: ServiceSeparateType[];
+  combined: Array<ServiceBaseType & { pricing: ServicePriceType }>;
 };

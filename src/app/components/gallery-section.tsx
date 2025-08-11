@@ -1,31 +1,46 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Eye } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export function GallerySection() {
   const [currentImage, setCurrentImage] = useState(0);
 
   const galleryImages = [
     {
-      before: "Mașină înainte de polish - vopsea mată și zgâriată",
-      after: "Mașină după polish - strălucire perfectă și vopsea ca oglinda",
-      title: "Polish Profesional BMW",
+      title: "Ușa interior",
+      before: {
+        src: "/usa-before.jpg",
+        description: "Ușa interior înainte de curățare - murdară",
+      },
+      after: {
+        src: "/usa-after.jpg",
+        description: "Ușa interior după curățare - aspect nou și curat",
+      },
     },
     {
-      before: "Faruri opacizate și îngălbenite",
-      after: "Faruri cristal clar după restaurare",
-      title: "Restaurare Faruri Audi",
+      title: "Scaun interior",
+      before: {
+        src: "/scaune-before.jpg",
+        description: "Scaun înainte de curățare - piele murdară și uzată",
+      },
+      after: {
+        src: "/scaune-after.jpg",
+        description: "Scaun după curățare - piele recondiționată și aspect nou",
+      },
     },
     {
-      before: "Interior murdar cu pete pe tapițerie",
-      after: "Interior impecabil după detailing complet",
-      title: "Detailing Interior Mercedes",
-    },
-    {
-      before: "Vopsea cu defecte și swirl marks",
-      after: "Vopsea perfectă după corecția lacului",
-      title: "Corecția Lacului Volkswagen",
+      title: "Portbagaj",
+      before: {
+        src: "/bagaj-before.jpg",
+        description: "Portbagaj pliniat și murdar înainte de curățare",
+      },
+      after: {
+        src: "/bagaj-after.jpg",
+        description:
+          "Portbagaj curățat și organizat după procesul de detailing",
+      },
     },
   ];
 
@@ -38,6 +53,8 @@ export function GallerySection() {
       (prev) => (prev - 1 + galleryImages.length) % galleryImages.length,
     );
   }
+
+  const currentGalleryImage = galleryImages[currentImage];
 
   return (
     <section id="galerie" className="bg-san-black py-20">
@@ -61,12 +78,12 @@ export function GallerySection() {
                   ÎNAINTE
                 </h3>
                 <div className="bg-san-light-gray flex aspect-video items-center justify-center rounded-lg border-2 border-gray-600">
-                  <div className="text-center">
-                    <Eye className="text-san-metallic mx-auto mb-3 h-12 w-12" />
-                    <p className="text-san-metallic px-4 text-sm">
-                      {galleryImages[currentImage].before}
-                    </p>
-                  </div>
+                  <Image
+                    width={310}
+                    height={300}
+                    src={currentGalleryImage.before.src}
+                    alt={currentGalleryImage.before.description}
+                  />
                 </div>
               </div>
 
@@ -76,19 +93,19 @@ export function GallerySection() {
                   DUPĂ
                 </h3>
                 <div className="bg-san-light-gray border-san-red flex aspect-video items-center justify-center rounded-lg border-2">
-                  <div className="text-center">
-                    <Eye className="text-san-red mx-auto mb-3 h-12 w-12" />
-                    <p className="text-san-metallic px-4 text-sm">
-                      {galleryImages[currentImage].after}
-                    </p>
-                  </div>
+                  <Image
+                    width={310}
+                    height={300}
+                    src={currentGalleryImage.after.src}
+                    alt={currentGalleryImage.after.description}
+                  />
                 </div>
               </div>
             </div>
 
             <div className="text-center">
               <h4 className="mb-4 text-2xl font-bold text-white">
-                {galleryImages[currentImage].title}
+                {currentGalleryImage.title}
               </h4>
 
               {/* Navigation */}
