@@ -1,4 +1,4 @@
-/** @type {import('next-sitemap').IConfig} */
+/** @types {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://www.sandetailing.ro/',
   generateRobotsTxt: true,

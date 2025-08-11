@@ -7,6 +7,7 @@ import { ContactSection } from "@/app/components/contact-section";
 import { Footer } from "@/app/components/footer";
 import { Toaster } from "@/shared/components/ui/sonner";
 import { TestimonialsSection } from "@/app/components/testimonials-section";
+import { WhatsAppFloatingButton } from "@/app/components/whatsapp-floating-button";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <TestimonialsSection />
       <ContactSection />
       <Footer />
+      <WhatsAppFloatingButton />
     </main>
   );
 }

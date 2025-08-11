@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { Car, ChevronDown } from "lucide-react";
 import { Button } from "@/shared/components/ui/button";
+import { Header } from "@/app/components/header";
 
 export function HeroSection() {
   function scrollToContact() {
@@ -23,48 +23,7 @@ export function HeroSection() {
         <div className="via-san-metallic absolute inset-0 animate-pulse bg-gradient-to-r from-transparent to-transparent"></div>
       </div>
 
-      {/* Navigation */}
-      <nav className="absolute top-0 right-0 left-0 z-50 p-6">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Image
-              src="/logo.png"
-              alt="San Detailing Logo"
-              width={64}
-              height={64}
-              className="h-16 w-auto"
-              priority
-            />
-          </div>
-          <div className="hidden space-x-8 md:flex">
-            <Link
-              href="#about"
-              className="text-san-metallic hover:text-san-red transition-colors"
-            >
-              Despre Noi
-            </Link>
-            <Link
-              href="#services"
-              className="text-san-metallic hover:text-san-red transition-colors"
-            >
-              Servicii
-            </Link>
-            <Link
-              href="#gallery"
-              className="text-san-metallic hover:text-san-red transition-colors"
-            >
-              Galerie
-            </Link>
-            <Link
-              href="#contact"
-              className="text-san-metallic hover:text-san-red transition-colors"
-            >
-              Contact
-            </Link>
-          </div>
-        </div>
-      </nav>
-
+      <Header />
       {/* Hero Content */}
       <div className="z-20 mx-auto max-w-4xl px-6 text-center">
         <div className="animate-fade-in">

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Star, Crown, Award, Car, Sparkles, Shield } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -9,183 +8,19 @@ import {
   CardHeader,
   CardTitle,
 } from "@/shared/components/ui/card";
+import servicesDataRaw from "@/data/services.json";
+import { ServicesDataType } from "@/app/types/service";
+import { getServiceIcon } from "@/shared/lib/services-data";
+
+const servicesData: ServicesDataType = servicesDataRaw;
 
 export function ServicesSection() {
   const [hoveredPackage, setHoveredPackage] = useState<string | null>(null);
 
-  const exteriorPackages = [
-    {
-      icon: Star,
-      title: "DETAILING EXTERIOR BRONZE",
-      duration: "1-2 zile",
-      services: [
-        "Decontaminare chimică și mecanică",
-        "Polish într-un pas – eliminare pânză de păianjen, holograme și zgârieturi fine (corecție 60-70%)",
-        "Aplicare dressinguri dedicate pe trimuri de plastic, anvelope și alte elemente",
-        "Aplicare protecție ceramică Carlexx Pro 8 cu durabilitate până la 2 ani",
-      ],
-      pricing: {
-        hatchback: "1000 lei",
-        sedan: "1300 lei",
-        suv: "1600 lei",
-      },
-    },
-    {
-      icon: Award,
-      title: "DETAILING EXTERIOR SILVER",
-      duration: "2-3 zile",
-      services: [
-        "Decontaminare chimică și mecanică",
-        "Polish 2 pași – corecție zgârieturi medii și lustruire (corecție 70-90%)",
-        "Polish trimuri lucioase",
-        "Polish tipsuri metalice",
-        "Aplicare dressinguri dedicate pe trimuri de plastic, anvelope și alte elemente",
-        "Aplicare protecție ceramică Carlexx Pro 9 cu durabilitate până la 3 ani",
-      ],
-      pricing: {
-        hatchback: "1800 lei",
-        sedan: "2300 lei",
-        suv: "2800 lei",
-      },
-    },
-    {
-      icon: Crown,
-      title: "DETAILING EXTERIOR GOLD",
-      duration: "3-4 zile",
-      services: [
-        "Decontaminare chimică și mecanică",
-        "Polish 3 pași – corecție zgârieturi adânci și lustruire (corecție 90-95%)",
-        "Polish trimuri lucioase",
-        "Polish tipsuri metalice",
-        "Aplicare protecție ceramică pe trimuri de plastic și jante",
-        "Aplicare dressing cauciucuri",
-        "Aplicare tratament hidrofob geamuri",
-        "Aplicare folie de protecție pe faruri",
-        "Detailing compartiment motor",
-        "Aplicare protecție ceramică Carlexx Pro 10, rezistență până la 5 ani",
-      ],
-      pricing: {
-        hatchback: "2500 lei",
-        sedan: "3000 lei",
-        suv: "3500 lei",
-      },
-    },
-  ];
-
-  const interiorPackages = [
-    {
-      icon: Star,
-      title: "DETAILING INTERIOR BRONZE",
-      services: [
-        "Curățare plafon și accesorii",
-        "Curățare scaune și banchetă",
-        "Curățare bord, volan, consola centrală",
-        "Curățare fețe de uși",
-        "Curățare chedere uși și caroserie",
-        "Curățare mochete și capitonaje portbagaj",
-        "Hidratare piele",
-      ],
-      pricing: {
-        hatchback: "500 lei",
-        sedan: "600 lei",
-        suv: "700 lei",
-      },
-    },
-    {
-      icon: Award,
-      title: "DETAILING INTERIOR SILVER",
-      services: [
-        "Curățare plafon și accesorii",
-        "Curățare scaune și banchetă",
-        "Curățare bord, volan, consola centrală",
-        "Curățare fețe de uși",
-        "Curățare chedere uși și caroserie",
-        "Curățare mochete și capitonaje portbagaj",
-        "Protecție UV elemente din plastic",
-        "Aplicare tratament piele",
-      ],
-      pricing: {
-        hatchback: "600 lei",
-        sedan: "700 lei",
-        suv: "800 lei",
-      },
-    },
-    {
-      icon: Crown,
-      title: "DETAILING INTERIOR GOLD",
-      services: [
-        "Curățare plafon și accesorii",
-        "Curățare scaune și banchetă",
-        "Curățare bord, volan, consola centrală",
-        "Curățare fețe de uși",
-        "Curățare chedere uși și caroserie",
-        "Curățare mochetă și capitonaje portbagaj",
-        "Aplicare protecție ceramică piele",
-        "Protecție UV elemente din plastic",
-        "Polish trimuri",
-        "Igienizare climă, eliminare mirosuri neplăcute și bacterii",
-      ],
-      pricing: {
-        hatchback: "800 lei",
-        sedan: "900 lei",
-        suv: "1000 lei",
-      },
-    },
-  ];
-
-  const combinedPackages = [
-    {
-      title: "PACHET INTERIOR + EXTERIOR BRONZE",
-      description:
-        "Acest pachet include detailing exterior Bronze + detailing interior Bronze",
-      pricing: {
-        hatchback: "1300 lei",
-        sedan: "1600 lei",
-        suv: "2000 lei",
-      },
-    },
-    {
-      title: "PACHET INTERIOR + EXTERIOR SILVER",
-      description:
-        "Acest pachet include detailing exterior Silver + detailing interior Silver",
-      pricing: {
-        hatchback: "2200 lei",
-        sedan: "2600 lei",
-        suv: "3200 lei",
-      },
-    },
-    {
-      title: "PACHET INTERIOR + EXTERIOR GOLD",
-      description:
-        "Acest pachet include detailing exterior Gold + detailing interior Gold",
-      pricing: {
-        hatchback: "3000 lei",
-        sedan: "3500 lei",
-        suv: "4000 lei",
-      },
-    },
-  ];
-
-  const separateServices = [
-    {
-      icon: Sparkles,
-      title: "Polish + Folii Faruri",
-      price: "de la 300 lei",
-    },
-    {
-      icon: Car,
-      title: "Chrome Delete",
-      price: "de la 500 lei",
-    },
-    {
-      icon: Shield,
-      title: "Tratament Hidrofob Sticlă",
-      price: "de la 200 lei",
-    },
-  ];
+  const { exterior, interior, separate } = servicesData;
 
   return (
-    <section id="services" className="bg-san-light-gray py-20">
+    <section id="servicii" className="bg-san-light-gray py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <h2 className="mb-6 text-4xl font-bold text-white md:text-5xl">
@@ -204,173 +39,136 @@ export function ServicesSection() {
             Pachete <span className="text-san-red">Detailing Exterior</span>
           </h3>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {exteriorPackages.map((pkg, index) => (
-              <Card
-                key={index}
-                className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform cursor-pointer transition-all duration-300 hover:scale-105"
-                onMouseEnter={() => setHoveredPackage(`ext-${index}`)}
-                onMouseLeave={() => setHoveredPackage(null)}
-              >
-                <CardHeader className="text-center">
-                  <pkg.icon
-                    className={`mx-auto mb-4 h-12 w-12 transition-colors duration-300 ${
-                      hoveredPackage === `ext-${index}`
-                        ? "text-san-red"
-                        : "text-san-metallic"
-                    }`}
-                  />
-                  <CardTitle className="text-xl text-white">
-                    {pkg.title}
-                  </CardTitle>
-                  <CardDescription className="text-san-metallic">
-                    Durata: {pkg.duration}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <ul className="text-san-metallic space-y-2 text-sm">
-                      {pkg.services.map((service, idx) => (
-                        <li key={idx} className="flex items-start">
-                          <span className="text-san-red mr-2">•</span>
-                          {service}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
-                      <div className="font-semibold text-white">
-                        <div>
-                          Hatchback:{" "}
-                          <span className="text-san-red">
-                            {pkg.pricing.hatchback}
-                          </span>
-                        </div>
-                        <div>
-                          Coupe/Sedan/Break:{" "}
-                          <span className="text-san-red">
-                            {pkg.pricing.sedan}
-                          </span>
-                        </div>
-                        <div>
-                          SUV:{" "}
-                          <span className="text-san-red">
-                            {pkg.pricing.suv}
-                          </span>
+            {exterior.map((pkg, index: number) => {
+              const Icon = getServiceIcon(pkg.icon);
+              return (
+                <Card
+                  key={index}
+                  className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform cursor-pointer transition-all duration-300 hover:scale-105"
+                  onMouseEnter={() => setHoveredPackage(`ext-${index}`)}
+                  onMouseLeave={() => setHoveredPackage(null)}
+                >
+                  <CardHeader className="text-center">
+                    <Icon
+                      className={`mx-auto mb-4 h-12 w-12 transition-colors duration-300 ${
+                        hoveredPackage === `ext-${index}`
+                          ? "text-san-red"
+                          : "text-san-metallic"
+                      }`}
+                    />
+                    <CardTitle className="text-xl text-white">
+                      {pkg.title}
+                    </CardTitle>
+                    {pkg.duration && (
+                      <CardDescription className="text-san-metallic">
+                        Durata: {pkg.duration}
+                      </CardDescription>
+                    )}
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <ul className="text-san-metallic space-y-2 text-sm">
+                        {pkg?.services?.map((service, idx: number) => (
+                          <li key={idx} className="flex items-start">
+                            <span className="text-san-red mr-2">•</span>
+                            {service?.name}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
+                        <div className="font-semibold text-white">
+                          <div>
+                            Hatchback:{" "}
+                            <span className="text-san-red">
+                              {pkg?.pricing?.hatchback}
+                            </span>
+                          </div>
+                          <div>
+                            Coupe/Sedan/Break:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.sedan}
+                            </span>
+                          </div>
+                          <div>
+                            SUV:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.suv}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
 
+        {/* Interior Detailing Packages */}
         <div className="mb-16">
           <h3 className="mb-8 text-center text-3xl font-bold text-white">
             Pachete <span className="text-san-red">Detailing Interior</span>
           </h3>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {interiorPackages.map((pkg, index) => (
-              <Card
-                key={index}
-                className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform cursor-pointer transition-all duration-300 hover:scale-105"
-                onMouseEnter={() => setHoveredPackage(`ext-${index}`)}
-                onMouseLeave={() => setHoveredPackage(null)}
-              >
-                <CardHeader className="text-center">
-                  <pkg.icon
-                    className={`mx-auto mb-4 h-12 w-12 transition-colors duration-300 ${
-                      hoveredPackage === `ext-${index}`
-                        ? "text-san-red"
-                        : "text-san-metallic"
-                    }`}
-                  />
-                  <CardTitle className="text-xl text-white">
-                    {pkg.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <ul className="text-san-metallic space-y-2 text-sm">
-                      {pkg.services.map((service, idx) => (
-                        <li key={idx} className="flex items-start">
-                          <span className="text-san-red mr-2">•</span>
-                          {service}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
-                      <div className="font-semibold text-white">
-                        <div>
-                          Hatchback:{" "}
-                          <span className="text-san-red">
-                            {pkg.pricing.hatchback}
-                          </span>
-                        </div>
-                        <div>
-                          Coupe/Sedan/Break:{" "}
-                          <span className="text-san-red">
-                            {pkg.pricing.sedan}
-                          </span>
-                        </div>
-                        <div>
-                          SUV:{" "}
-                          <span className="text-san-red">
-                            {pkg.pricing.suv}
-                          </span>
+            {interior.map((pkg, index: number) => {
+              const Icon = getServiceIcon(pkg.icon);
+              return (
+                <Card
+                  key={index}
+                  className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform cursor-pointer transition-all duration-300 hover:scale-105"
+                  onMouseEnter={() => setHoveredPackage(`int-${index}`)}
+                  onMouseLeave={() => setHoveredPackage(null)}
+                >
+                  <CardHeader className="text-center">
+                    <Icon
+                      className={`mx-auto mb-4 h-12 w-12 transition-colors duration-300 ${
+                        hoveredPackage === `int-${index}`
+                          ? "text-san-red"
+                          : "text-san-metallic"
+                      }`}
+                    />
+                    <CardTitle className="text-xl text-white">
+                      {pkg.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <ul className="text-san-metallic space-y-2 text-sm">
+                        {pkg.services.map((service, idx: number) => (
+                          <li key={idx} className="flex items-start">
+                            <span className="text-san-red mr-2">•</span>
+                            {service?.name}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
+                        <div className="font-semibold text-white">
+                          <div>
+                            Hatchback:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.hatchback}
+                            </span>
+                          </div>
+                          <div>
+                            Coupe/Sedan/Break:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.sedan}
+                            </span>
+                          </div>
+                          <div>
+                            SUV:{" "}
+                            <span className="text-san-red">
+                              {pkg.pricing.suv}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Combined Interior + Exterior Packages */}
-        <div className="mb-16">
-          <h3 className="mb-8 text-center text-3xl font-bold text-white">
-            Pachete <span className="text-san-red">Interior + Exterior</span>
-          </h3>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            {combinedPackages.map((pkg, index) => (
-              <Card
-                key={index}
-                className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform transition-all duration-300 hover:scale-105"
-              >
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl text-white">
-                    {pkg.title}
-                  </CardTitle>
-                  <CardDescription className="text-san-metallic">
-                    {pkg.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 text-center">
-                    <div className="font-semibold text-white">
-                      <div>
-                        Hatchback:{" "}
-                        <span className="text-san-red">
-                          {pkg.pricing.hatchback}
-                        </span>
-                      </div>
-                      <div>
-                        Coupe/Sedan/Break:{" "}
-                        <span className="text-san-red">
-                          {pkg.pricing.sedan}
-                        </span>
-                      </div>
-                      <div>
-                        SUV:{" "}
-                        <span className="text-san-red">{pkg.pricing.suv}</span>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
 
@@ -380,24 +178,27 @@ export function ServicesSection() {
             Servicii <span className="text-san-red">Separate</span>
           </h3>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {separateServices.map((service, index) => (
-              <Card
-                key={index}
-                className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform transition-all duration-300 hover:scale-105"
-              >
-                <CardHeader className="text-center">
-                  <service.icon className="text-san-metallic mx-auto mb-4 h-12 w-12" />
-                  <CardTitle className="text-xl text-white">
-                    {service.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <span className="bg-san-red rounded-lg px-4 py-2 font-semibold text-white">
-                    {service.price}
-                  </span>
-                </CardContent>
-              </Card>
-            ))}
+            {separate.map((service, index: number) => {
+              const Icon = getServiceIcon(service.icon);
+              return (
+                <Card
+                  key={index}
+                  className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 transform transition-all duration-300 hover:scale-105"
+                >
+                  <CardHeader className="text-center">
+                    <Icon className="text-san-metallic mx-auto mb-4 h-12 w-12" />
+                    <CardTitle className="text-xl text-white">
+                      {service.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                    <span className="bg-san-red rounded-lg px-4 py-2 font-semibold text-white">
+                      {service.price}
+                    </span>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
 

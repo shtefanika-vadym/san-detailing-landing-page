@@ -3,7 +3,7 @@ import { Award, Users, Clock } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section id="about" className="bg-san-gray py-20">
+    <section id="despre-noi" className="bg-san-gray py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="animate-slide-in-left">
@@ -61,7 +61,7 @@ export function AboutSection() {
               </div>
               <div className="mt-6 text-center">
                 <h3 className="mb-2 text-xl font-semibold text-white">
-                  Experiență de Peste 5 Ani
+                  Experiență de Peste 2 Ani
                 </h3>
                 <p className="text-san-metallic">
                   în domeniul detailing-ului auto premium

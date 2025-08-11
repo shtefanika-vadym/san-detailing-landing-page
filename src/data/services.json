@@ -1,0 +1,207 @@
+{
+  "exterior": [
+    {
+      "slug": "exterior-bronze",
+      "title": "Detailing Exterior Bronze",
+      "icon": "Star",
+      "duration": "1-2 zile",
+      "services": [
+        {
+          "name": "Decontaminare chimică și mecanică",
+          "desc": "Îndepărtarea contaminanților de pe suprafața vopselei pentru o curățare profundă și pregătirea pentru polish."
+        },
+        {
+          "name": "Polish într-un pas – eliminare pânză de păianjen, holograme și zgârieturi fine (corecție 60-70%)",
+          "desc": "Redă luciul original al vopselei, eliminând zgârieturile fine și imperfecțiunile minore."
+        },
+        {
+          "name": "Aplicare dressinguri dedicate pe trimuri de plastic, anvelope și alte elemente",
+          "desc": "Protejează și reîmprospătează elementele din plastic și cauciuc."
+        },
+        {
+          "name": "Aplicare protecție ceramică Carlexx Pro 8 cu durabilitate până la 2 ani",
+          "desc": "Oferă o barieră hidrofobă și protecție UV pentru vopsea."
+        }
+      ],
+      "pricing": {
+        "hatchback": "1000 lei",
+        "sedan": "1300 lei",
+        "suv": "1600 lei"
+      },
+      "seo": {
+        "title": "Detailing Exterior Bronze Suceava | San Detailing",
+        "description": "Alege pachetul Detailing Exterior Bronze pentru o curățare profundă, polish profesional și protecție ceramică. Servicii premium în Suceava!",
+        "keywords": "detailing exterior bronze, polish auto, protecție ceramică, detailing Suceava, detailing exterior Suceava"
+      }
+    },
+    {
+      "slug": "exterior-silver",
+      "title": "Detailing Exterior Silver",
+      "icon": "Award",
+      "duration": "2-3 zile",
+      "services": [
+        { "name": "Decontaminare chimică și mecanică", "desc": "Curățare avansată pentru o suprafață perfectă înainte de polish." },
+        { "name": "Polish 2 pași – corecție zgârieturi medii și lustruire (corecție 70-90%)", "desc": "Elimină zgârieturi medii și redă luciul intens vopselei." },
+        { "name": "Polish trimuri lucioase", "desc": "Îmbunătățește aspectul elementelor lucioase exterioare." },
+        { "name": "Polish tipsuri metalice", "desc": "Curățare și polish pentru elementele metalice vizibile." },
+        { "name": "Aplicare tratament hidrofob parbriz", "desc": "Crește vizibilitatea pe timp de ploaie și protejează sticla." },
+        { "name": "Aplicare dressinguri dedicate pe trimuri de plastic, anvelope și alte elemente", "desc": "Protecție și aspect reîmprospătat pentru elementele exterioare." },
+        { "name": "Aplicare protecție ceramică Carlexx Pro 9 cu durabilitate până la 3 ani", "desc": "Protecție ceramică avansată pentru vopsea." }
+      ],
+      "pricing": {
+        "hatchback": "1800 lei",
+        "sedan": "2300 lei",
+        "suv": "2800 lei"
+      },
+      "seo": {
+        "title": "Detailing Exterior Silver Suceava | San Detailing",
+        "description": "Pachetul Detailing Exterior Silver oferă polish în 2 pași, tratament hidrofob și protecție ceramică. Rezultate premium în Suceava!",
+        "keywords": "detailing exterior silver, polish auto, protecție ceramică, detailing Suceava, detailing exterior Suceava"
+      }
+    },
+    {
+      "slug": "exterior-gold",
+      "title": "Detailing Exterior Gold",
+      "icon": "Crown",
+      "duration": "3-4 zile",
+      "services": [
+        { "name": "Decontaminare chimică și mecanică", "desc": "Curățare completă pentru rezultate de top." },
+        { "name": "Polish 3 pași – corecție zgârieturi adânci și lustruire (corecție 90-95%)", "desc": "Corecție avansată pentru vopsea impecabilă." },
+        { "name": "Polish trimuri lucioase", "desc": "Aspect premium pentru elementele lucioase." },
+        { "name": "Polish tipsuri metalice", "desc": "Curățare și polish pentru detalii metalice." },
+        { "name": "Aplicare protecție ceramică pe trimuri de plastic și jante", "desc": "Protecție suplimentară pentru toate elementele exterioare." },
+        { "name": "Aplicare dressing cauciucuri", "desc": "Cauciucuri cu aspect nou și protejate." },
+        { "name": "Aplicare tratament hidrofob geamuri", "desc": "Vizibilitate crescută și protecție pentru geamuri." },
+        { "name": "Aplicare folie de protecție pe faruri", "desc": "Faruri protejate împotriva zgârieturilor și îmbătrânirii." },
+        { "name": "Detailing compartiment motor", "desc": "Curățare și protecție pentru motor." },
+        { "name": "Aplicare protecție ceramică Carlexx Pro 10, rezistență până la 5 ani", "desc": "Cea mai avansată protecție ceramică pentru vopsea." }
+      ],
+      "pricing": {
+        "hatchback": "2500 lei",
+        "sedan": "3000 lei",
+        "suv": "3500 lei"
+      },
+      "seo": {
+        "title": "Detailing Exterior Gold Suceava | San Detailing",
+        "description": "Alege pachetul Detailing Exterior Gold pentru corecție avansată, protecție ceramică și rezultate de excepție în Suceava!",
+        "keywords": "detailing exterior gold, polish auto, protecție ceramică, detailing Suceava, detailing exterior Suceava"
+      }
+    }
+  ],
+  "interior": [
+    {
+      "slug": "interior-bronze",
+      "title": "Detailing Interior Bronze",
+      "icon": "Star",
+      "services": [
+        { "name": "Curățare plafon și accesorii", "desc": "Îndepărtarea murdăriei și a petelor de pe plafon și accesorii." },
+        { "name": "Curățare scaune și banchetă", "desc": "Curățare profundă pentru scaune și banchetă, inclusiv tapițerie textilă sau piele." },
+        { "name": "Curățare bord, volan, consola centrală", "desc": "Curățare și dezinfectare pentru zonele de contact frecvent." },
+        { "name": "Curățare fețe de uși", "desc": "Îndepărtarea petelor și a prafului de pe fețele de uși." },
+        { "name": "Curățare chedere uși și caroserie", "desc": "Curățare detaliată pentru chedere și zone greu accesibile." },
+        { "name": "Curățare mochete și capitonaje portbagaj", "desc": "Curățare completă pentru mochete și portbagaj." },
+        { "name": "Hidratare piele", "desc": "Menține pielea moale și previne crăparea." }
+      ],
+      "pricing": {
+        "hatchback": "500 lei",
+        "sedan": "600 lei",
+        "suv": "700 lei"
+      },
+      "seo": {
+        "title": "Detailing Interior Bronze Suceava | San Detailing",
+        "description": "Pachetul Detailing Interior Bronze oferă curățare completă și hidratare piele. Servicii profesionale în Suceava!",
+        "keywords": "detailing interior bronze, curățare interior auto, hidratare piele, detailing Suceava, detailing interior Suceava"
+      }
+    },
+    {
+      "slug": "interior-silver",
+      "title": "Detailing Interior Silver",
+      "icon": "Award",
+      "services": [
+        { "name": "Curățare plafon și accesorii", "desc": "Curățare avansată pentru plafon și accesorii." },
+        { "name": "Curățare scaune și banchetă", "desc": "Curățare profundă pentru scaune și banchetă." },
+        { "name": "Curățare bord, volan, consola centrală", "desc": "Curățare și dezinfectare pentru zonele de contact." },
+        { "name": "Curățare fețe de uși", "desc": "Curățare detaliată pentru fețele de uși." },
+        { "name": "Curățare chedere uși și caroserie", "desc": "Curățare pentru chedere și caroserie." },
+        { "name": "Curățare mochete și capitonaje portbagaj", "desc": "Curățare completă pentru mochete și portbagaj." },
+        { "name": "Protecție UV elemente din plastic", "desc": "Previne decolorarea și degradarea elementelor din plastic." },
+        { "name": "Aplicare tratament piele", "desc": "Protejează și menține pielea în stare excelentă." }
+      ],
+      "pricing": {
+        "hatchback": "600 lei",
+        "sedan": "700 lei",
+        "suv": "800 lei"
+      },
+      "seo": {
+        "title": "Detailing Interior Silver Suceava | San Detailing",
+        "description": "Pachetul Detailing Interior Silver include protecție UV și tratament piele. Servicii profesionale în Suceava!",
+        "keywords": "detailing interior silver, curățare interior auto, protecție UV, detailing Suceava, detailing interior Suceava"
+      }
+    },
+    {
+      "slug": "interior-gold",
+      "title": "Detailing Interior Gold",
+      "icon": "Crown",
+      "services": [
+        { "name": "Curățare plafon și accesorii", "desc": "Curățare completă pentru plafon și accesorii." },
+        { "name": "Curățare scaune și banchetă", "desc": "Curățare profundă pentru scaune și banchetă." },
+        { "name": "Curățare bord, volan, consola centrală", "desc": "Curățare și dezinfectare pentru zonele de contact." },
+        { "name": "Curățare fețe de uși", "desc": "Curățare detaliată pentru fețele de uși." },
+        { "name": "Curățare chedere uși și caroserie", "desc": "Curățare pentru chedere și caroserie." },
+        { "name": "Curățare mochetă și capitonaje portbagaj", "desc": "Curățare completă pentru mochete și portbagaj." },
+        { "name": "Aplicare protecție ceramică piele", "desc": "Protecție avansată pentru piele." },
+        { "name": "Protecție UV elemente din plastic", "desc": "Previne decolorarea și degradarea elementelor din plastic." },
+        { "name": "Polish trimuri", "desc": "Redă luciul elementelor interioare lucioase." },
+        { "name": "Igienizare climă, eliminare mirosuri neplăcute și bacterii", "desc": "Aer curat și sănătos în habitaclu." }
+      ],
+      "pricing": {
+        "hatchback": "800 lei",
+        "sedan": "900 lei",
+        "suv": "1000 lei"
+      },
+      "seo": {
+        "title": "Detailing Interior Gold Suceava | San Detailing",
+        "description": "Pachetul Detailing Interior Gold oferă protecție ceramică piele și igienizare climă. Servicii profesionale în Suceava!",
+        "keywords": "detailing interior gold, curățare interior auto, protecție ceramică piele, detailing Suceava, detailing interior Suceava"
+      }
+    }
+  ],
+  "separate": [
+    {
+      "slug": "polish-folii-faruri",
+      "title": "Polish + Folii Faruri",
+      "icon": "Sparkles",
+      "description": "Serviciu de polish profesional și aplicare folie de protecție pentru faruri. Redă claritatea și protejează farurile împotriva zgârieturilor și îmbătrânirii.",
+      "price": "de la 300 lei",
+      "seo": {
+        "title": "Polish Faruri Suceava | San Detailing",
+        "description": "Polish profesional și folie de protecție pentru faruri. Claritate și protecție de durată în Suceava!",
+        "keywords": "polish faruri, folie faruri, detailing Suceava, polish auto Suceava, protecție faruri"
+      }
+    },
+    {
+      "slug": "chrome-delete",
+      "title": "Chrome Delete",
+      "icon": "Car",
+      "description": "Serviciu de eliminare a elementelor cromate pentru un aspect modern și personalizat al mașinii.",
+      "price": "de la 500 lei",
+      "seo": {
+        "title": "Chrome Delete Suceava | San Detailing",
+        "description": "Eliminare elemente cromate pentru un look modern. Personalizare auto în Suceava!",
+        "keywords": "chrome delete, personalizare auto, detailing Suceava, folie auto Suceava"
+      }
+    },
+    {
+      "slug": "tratament-hidrofob-sticla",
+      "title": "Tratament Hidrofob Sticlă",
+      "icon": "Shield",
+      "description": "Aplicare tratament hidrofob pentru sticlă, crește vizibilitatea și siguranța pe timp de ploaie.",
+      "price": "de la 200 lei",
+      "seo": {
+        "title": "Tratament Hidrofob Sticlă Suceava | San Detailing",
+        "description": "Tratament hidrofob profesional pentru sticlă. Vizibilitate și siguranță sporită în Suceava!",
+        "keywords": "tratament hidrofob sticlă, detailing Suceava, protecție sticlă, tratament parbriz"
+      }
+    }
+  ]
+}
