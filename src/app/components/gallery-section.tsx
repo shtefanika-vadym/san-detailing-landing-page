@@ -9,7 +9,18 @@ export function GallerySection() {
 
   const galleryImages = [
     {
-      title: "Ușa interior",
+      title: "Polish faruri",
+      before: {
+        src: "/headlight-before.jpg",
+        description: "Far înainte de polish - mat, îngălbenit și zgâriat",
+      },
+      after: {
+        src: "/headlight-after.jpg",
+        description: "Far după polish - clar, strălucitor și ca nou",
+      },
+    },
+    {
+      title: "Curățare ușa interior",
       before: {
         src: "/usa-before.jpg",
         description: "Ușa interior înainte de curățare - murdară",
@@ -20,7 +31,7 @@ export function GallerySection() {
       },
     },
     {
-      title: "Scaun interior",
+      title: "Curățare scaun interior",
       before: {
         src: "/scaune-before.jpg",
         description: "Scaun înainte de curățare - piele murdară și uzată",
@@ -31,7 +42,7 @@ export function GallerySection() {
       },
     },
     {
-      title: "Portbagaj",
+      title: "Curățare portbagaj",
       before: {
         src: "/bagaj-before.jpg",
         description: "Portbagaj pliniat și murdar înainte de curățare",
