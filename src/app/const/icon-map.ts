@@ -7,6 +7,7 @@ import {
   Shield,
   Sparkles,
   Star,
+  Paintbrush,
 } from "lucide-react";
 
 export const SERVICES_ICON_MAP: Record<
@@ -21,4 +22,5 @@ export const SERVICES_ICON_MAP: Record<
   Car,
   Sparkles,
   Shield,
+  Paintbrush,
 };

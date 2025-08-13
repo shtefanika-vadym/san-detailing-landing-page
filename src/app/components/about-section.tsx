@@ -1,5 +1,6 @@
 import React from "react";
 import { Award, Users, Clock } from "lucide-react";
+import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -52,12 +53,13 @@ export function AboutSection() {
           <div className="relative">
             <div className="from-san-light-gray to-san-gray border-san-metallic/20 rounded-lg border bg-gradient-to-br p-8">
               <div className="bg-san-black aspect-video overflow-hidden rounded-lg">
-                {/*<img*/}
-                {/*  src="/lovable-uploads/6445bcc0-d94e-4a2e-b5cf-1f6b9dfb9e51.png"*/}
-                {/*  alt="Echipa San Detailing"*/}
-                {/*  className="mx-auto h-full w-full object-contain object-top"*/}
-                {/*  style={{ transform: "scale(1.8)" }}*/}
-                {/*/>*/}
+                <Image
+                  src="/team.jpg"
+                  alt="Echipa San Detailing"
+                  width={620}
+                  height={350}
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="mt-6 text-center">
                 <h3 className="mb-2 text-xl font-semibold text-white">
