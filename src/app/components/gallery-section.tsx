@@ -20,6 +20,18 @@ export function GallerySection() {
       },
     },
     {
+      title: "Polish bară față",
+      before: {
+        src: "/polish-before.jpeg",
+        description: "Bară față înainte de polish - zgâriată",
+      },
+      after: {
+        src: "/polish-after.jpeg",
+        description:
+          "Bară față după polish - aspect nou și strălucitor fără zgârieturi",
+      },
+    },
+    {
       title: "Curățare ușa interior",
       before: {
         src: "/usa-before.jpg",
