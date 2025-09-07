@@ -66,13 +66,12 @@
       "duration": "3-4 zile",
       "services": [
         { "name": "Decontaminare chimică și mecanică", "desc": "Curățare completă pentru rezultate de top." },
-        { "name": "Polish 3 pași – corecție zgârieturi adânci și lustruire (corecție 90-95%)", "desc": "Corecție avansată pentru vopsea impecabilă." },
+        { "name": "Polish 2 pași – corecție zgârieturi medii și lustruire (corecție 70-90%)", "desc": "Elimină zgârieturi medii și redă luciul intens vopselei." },
         { "name": "Polish trimuri lucioase", "desc": "Aspect premium pentru elementele lucioase." },
         { "name": "Polish tipsuri metalice", "desc": "Curățare și polish pentru detalii metalice." },
         { "name": "Aplicare protecție ceramică pe trimuri de plastic și jante", "desc": "Protecție suplimentară pentru toate elementele exterioare." },
         { "name": "Aplicare dressing cauciucuri", "desc": "Cauciucuri cu aspect nou și protejate." },
         { "name": "Aplicare tratament hidrofob geamuri", "desc": "Vizibilitate crescută și protecție pentru geamuri." },
-        { "name": "Aplicare folie de protecție pe faruri", "desc": "Faruri protejate împotriva zgârieturilor și îmbătrânirii." },
         { "name": "Detailing compartiment motor", "desc": "Curățare și protecție pentru motor." },
         { "name": "Aplicare protecție ceramică Carlexx Pro 10, rezistență până la 5 ani", "desc": "Cea mai avansată protecție ceramică pentru vopsea." }
       ],
@@ -144,11 +143,9 @@
       "title": "Detailing Interior Bronze",
       "icon": "Star",
       "services": [
-        { "name": "Curățare plafon și accesorii", "desc": "Îndepărtarea murdăriei și a petelor de pe plafon și accesorii." },
         { "name": "Curățare scaune și banchetă", "desc": "Curățare profundă pentru scaune și banchetă, inclusiv tapițerie textilă sau piele." },
         { "name": "Curățare bord, volan, consola centrală", "desc": "Curățare și dezinfectare pentru zonele de contact frecvent." },
         { "name": "Curățare fețe de uși", "desc": "Îndepărtarea petelor și a prafului de pe fețele de uși." },
-        { "name": "Curățare chedere uși și caroserie", "desc": "Curățare detaliată pentru chedere și zone greu accesibile." },
         { "name": "Curățare mochete și capitonaje portbagaj", "desc": "Curățare completă pentru mochete și portbagaj." },
         { "name": "Hidratare piele", "desc": "Menține pielea moale și previne crăparea." }
       ],
