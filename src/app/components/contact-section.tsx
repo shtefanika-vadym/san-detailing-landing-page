@@ -12,7 +12,6 @@ import {
   CardTitle,
 } from "@/shared/components/ui/card";
 import { toast } from "sonner";
-import axios from "axios";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -31,29 +30,28 @@ export function ContactSection() {
     }));
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    // Simulate form submission
-    toast(
-      <>
-        <p>Mesaj trimis cu succes!</p>
-        <p>Vă vom contacta în cel mai scurt timp posibil.</p>
-      </>,
-    );
+    const form = new FormData(e.target as HTMLFormElement);
+    form.append("access_key", "9454fa9f-a2af-48fa-bdfc-f9792b316e34");
 
-    await axios({
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      data: formData,
-      url: `${process.env.NEXT_PUBLIC_API_BASE_URL}/send-whatsapp`,
+      body: form,
     });
 
-    // Reset form
-    setFormData({
-      name: "",
-      message: "",
-      phoneNumber: "",
-    });
+    const data = await response.json();
+
+    if (data.success) {
+      toast(
+        <>
+          <p>Mesaj trimis cu succes!</p>
+          <p>Vă vom contacta în cel mai scurt timp posibil.</p>
+        </>,
+      );
+      setFormData({ name: "", message: "", phoneNumber: "" });
+    } else toast("A apărut o eroare. Vă rugăm încercați din nou.");
   }
 
   const contactInfo = [

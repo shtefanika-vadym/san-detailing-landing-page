@@ -8,6 +8,7 @@ import type {
 import { Header } from "@/app/components/header";
 import { Footer } from "@/app/components/footer";
 import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 import { WhatsAppFloatingButton } from "@/app/components/whatsapp-floating-button";
 
 type ParamsType = { params: Promise<{ slug: string }> };
@@ -45,6 +46,15 @@ export default async function ServicePage({ params }: ParamsType) {
       <Header />
       <section className="bg-san-light-gray min-h-screen py-40">
         <div className="mx-auto max-w-3xl px-6">
+          <div className="mb-8">
+            <Link
+              href="/#servicii"
+              className="text-san-metallic inline-flex items-center gap-2 transition-colors duration-200 hover:text-white"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Înapoi la servicii
+            </Link>
+          </div>
           <div className="mb-10 text-center">
             <Icon className="text-san-red mx-auto mb-4 h-14 w-14" />
             <h1 className="mb-4 text-4xl font-bold text-white">
@@ -96,6 +106,11 @@ export default async function ServicePage({ params }: ParamsType) {
                   </span>
                 ))}
               </div>
+              {slug.startsWith("interior-") && (
+                <p className="text-san-metallic mt-3 text-sm italic">
+                  Prețul poate fi modificat în funcție de starea mașinii
+                </p>
+              )}
             </div>
           )}
           {"price" in service && (

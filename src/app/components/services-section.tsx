@@ -112,7 +112,7 @@ export function ServicesSection() {
           <h3 className="mb-8 text-center text-3xl font-bold text-white">
             Pachete <span className="text-san-red">Detailing Interior</span>
           </h3>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 lg:mx-auto lg:max-w-4xl lg:grid-cols-2">
             {interior.map((pkg, index: number) => {
               const Icon = getServiceIcon(pkg.icon);
               return (
@@ -165,6 +165,10 @@ export function ServicesSection() {
                               </span>
                             </div>
                           </div>
+                          <p className="text-san-metallic mt-2 text-xs italic">
+                            Prețul poate fi modificat în funcție de starea
+                            mașinii
+                          </p>
                         </div>
                       </div>
                     </CardContent>

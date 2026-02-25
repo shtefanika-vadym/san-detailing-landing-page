@@ -24,9 +24,9 @@
         }
       ],
       "pricing": {
-        "hatchback": "1000 lei",
-        "sedan": "1300 lei",
-        "suv": "1600 lei"
+        "hatchback": "1300 lei",
+        "sedan": "1600 lei",
+        "suv": "2000 lei"
       },
       "seo": {
         "title": "Detailing Exterior Bronze Suceava | San Detailing",
@@ -49,9 +49,9 @@
         { "name": "Aplicare protecție ceramică Carlexx Pro 9 cu durabilitate până la 3 ani", "desc": "Protecție ceramică avansată pentru vopsea." }
       ],
       "pricing": {
-        "hatchback": "1800 lei",
-        "sedan": "2300 lei",
-        "suv": "2800 lei"
+        "hatchback": "2000 lei",
+        "sedan": "2500 lei",
+        "suv": "3000 lei"
       },
       "seo": {
         "title": "Detailing Exterior Silver Suceava | San Detailing",
@@ -76,9 +76,9 @@
         { "name": "Aplicare protecție ceramică Carlexx Pro 10, rezistență până la 5 ani", "desc": "Cea mai avansată protecție ceramică pentru vopsea." }
       ],
       "pricing": {
-        "hatchback": "2500 lei",
-        "sedan": "3000 lei",
-        "suv": "3500 lei"
+        "hatchback": "3000 lei",
+        "sedan": "3500 lei",
+        "suv": "4000 lei"
       },
       "seo": {
         "title": "Detailing Exterior Gold Suceava | San Detailing",
@@ -94,9 +94,9 @@
       "icon": "Star",
       "description": "Acest pachet include detailing exterior Bronze + detailing interior Bronze",
       "pricing": {
-        "hatchback": "1300 lei",
-        "sedan": "1600 lei",
-        "suv": "2000 lei"
+        "hatchback": "1600 lei",
+        "sedan": "2000 lei",
+        "suv": "2500 lei"
       },
       "seo": {
         "title": "Pachet Detailing Interior + Exterior Bronze Suceava | San Detailing",
@@ -110,9 +110,9 @@
       "icon": "Award",
       "description": "Acest pachet include detailing exterior Silver + detailing interior Silver",
       "pricing": {
-        "hatchback": "2200 lei",
-        "sedan": "2600 lei",
-        "suv": "3200 lei"
+        "hatchback": "2400 lei",
+        "sedan": "2900 lei",
+        "suv": "3400 lei"
       },
       "seo": {
         "title": "Pachet Detailing Interior + Exterior Silver Suceava | San Detailing",
@@ -126,9 +126,9 @@
       "icon": "Crown",
       "description": "Acest pachet include detailing exterior Gold + detailing interior Gold",
       "pricing": {
-        "hatchback": "3000 lei",
-        "sedan": "3500 lei",
-        "suv": "4000 lei"
+        "hatchback": "3500 lei",
+        "sedan": "4000 lei",
+        "suv": "4600 lei"
       },
       "seo": {
         "title": "Pachet Detailing Interior + Exterior Gold Suceava | San Detailing",
@@ -138,28 +138,6 @@
     }
   ],
   "interior": [
-    {
-      "slug": "interior-bronze",
-      "title": "Detailing Interior Bronze",
-      "icon": "Star",
-      "services": [
-        { "name": "Curățare scaune și banchetă", "desc": "Curățare profundă pentru scaune și banchetă, inclusiv tapițerie textilă sau piele." },
-        { "name": "Curățare bord, volan, consola centrală", "desc": "Curățare și dezinfectare pentru zonele de contact frecvent." },
-        { "name": "Curățare fețe de uși", "desc": "Îndepărtarea petelor și a prafului de pe fețele de uși." },
-        { "name": "Curățare mochete și capitonaje portbagaj", "desc": "Curățare completă pentru mochete și portbagaj." },
-        { "name": "Hidratare piele", "desc": "Menține pielea moale și previne crăparea." }
-      ],
-      "pricing": {
-        "hatchback": "500 lei",
-        "sedan": "600 lei",
-        "suv": "700 lei"
-      },
-      "seo": {
-        "title": "Detailing Interior Bronze Suceava | San Detailing",
-        "description": "Pachetul Detailing Interior Bronze oferă curățare completă și hidratare piele. Servicii profesionale în Suceava!",
-        "keywords": "detailing interior bronze, curățare interior auto, hidratare piele, detailing Suceava, detailing interior Suceava"
-      }
-    },
     {
       "slug": "interior-silver",
       "title": "Detailing Interior Silver",
@@ -175,9 +153,9 @@
         { "name": "Aplicare tratament piele", "desc": "Protejează și menține pielea în stare excelentă." }
       ],
       "pricing": {
-        "hatchback": "600 lei",
-        "sedan": "700 lei",
-        "suv": "800 lei"
+        "hatchback": "700 lei",
+        "sedan": "800 lei",
+        "suv": "900 lei"
       },
       "seo": {
         "title": "Detailing Interior Silver Suceava | San Detailing",
@@ -202,9 +180,9 @@
         { "name": "Igienizare climă, eliminare mirosuri neplăcute și bacterii", "desc": "Aer curat și sănătos în habitaclu." }
       ],
       "pricing": {
-        "hatchback": "800 lei",
-        "sedan": "900 lei",
-        "suv": "1000 lei"
+        "hatchback": "1000 lei",
+        "sedan": "1100 lei",
+        "suv": "1200 lei"
       },
       "seo": {
         "title": "Detailing Interior Gold Suceava | San Detailing",
@@ -219,7 +197,7 @@
       "title": "Polish + Folii Faruri",
       "icon": "Sparkles",
       "description": "Serviciu de polish profesional și aplicare folie de protecție pentru faruri. Redă claritatea și protejează farurile împotriva zgârieturilor și îmbătrânirii.",
-      "price": "de la 300 lei",
+      "price": "de la 500 lei",
       "seo": {
         "title": "Polish Faruri Suceava | San Detailing",
         "description": "Polish profesional și folie de protecție pentru faruri. Claritate și protecție de durată în Suceava!",
@@ -231,7 +209,7 @@
       "title": "Chrome Delete",
       "icon": "Car",
       "description": "Serviciu de eliminare a elementelor cromate pentru un aspect modern și personalizat al mașinii.",
-      "price": "de la 500 lei",
+      "price": "de la 600 lei",
       "seo": {
         "title": "Chrome Delete Suceava | San Detailing",
         "description": "Eliminare elemente cromate pentru un look modern. Personalizare auto în Suceava!",
