@@ -11,11 +11,33 @@ export function GallerySection() {
     {
       title: "Polish faruri",
       before: {
+        src: "/pst-far1-before.jpeg",
+        description: "Far înainte de polish - mat, îngălbenit și zgâriat",
+      },
+      after: {
+        src: "/pst-far1-after.jpeg",
+        description: "Far după polish - clar, strălucitor și ca nou",
+      },
+    },
+    {
+      title: "Polish faruri",
+      before: {
         src: "/headlight-before.jpg",
         description: "Far înainte de polish - mat, îngălbenit și zgâriat",
       },
       after: {
         src: "/headlight-after.jpg",
+        description: "Far după polish - clar, strălucitor și ca nou",
+      },
+    },
+    {
+      title: "Polish faruri",
+      before: {
+        src: "/pst-far2-before.jpeg",
+        description: "Far înainte de polish - mat, îngălbenit și zgâriat",
+      },
+      after: {
+        src: "/pst-far2-after.jpeg",
         description: "Far după polish - clar, strălucitor și ca nou",
       },
     },
@@ -32,14 +54,37 @@ export function GallerySection() {
       },
     },
     {
-      title: "Curățare ușa interior",
+      title: "Polish faruri",
+      before: {
+        src: "/mer-far-before.jpeg",
+        description: "Far înainte de polish - mat, îngălbenit și zgâriat",
+      },
+      after: {
+        src: "/mer-far-after.jpeg",
+        description: "Far după polish - clar, strălucitor și ca nou",
+      },
+    },
+    {
+      title: "Polish bară față",
+      before: {
+        src: "/lov-gri-before.jpeg",
+        description: "Bară față înainte de polish - zgâriată",
+      },
+      after: {
+        src: "/lov-gri-after.jpeg",
+        description:
+          "Bară față după polish - aspect nou și strălucitor fără zgârieturi",
+      },
+    },
+    {
+      title: "Curățare ușă interior",
       before: {
         src: "/usa-before.jpg",
-        description: "Ușa interior înainte de curățare - murdară",
+        description: "Ușă interior înainte de curățare - murdară",
       },
       after: {
         src: "/usa-after.jpg",
-        description: "Ușa interior după curățare - aspect nou și curat",
+        description: "Ușă interior după curățare - aspect nou și curat",
       },
     },
     {
@@ -57,12 +102,34 @@ export function GallerySection() {
       title: "Curățare portbagaj",
       before: {
         src: "/bagaj-before.jpg",
-        description: "Portbagaj pliniat și murdar înainte de curățare",
+        description: "Portbagaj plin și murdar înainte de curățare",
       },
       after: {
         src: "/bagaj-after.jpg",
         description:
           "Portbagaj curățat și organizat după procesul de detailing",
+      },
+    },
+    {
+      title: "Curățare interior",
+      before: {
+        src: "/bord-jum.jpeg",
+        description: "Torpedou plin și murdar înainte de curățare",
+      },
+      after: {
+        src: "/cap-jum.jpeg",
+        description: "Cotieră curățată după procesul de detailing",
+      },
+    },
+    {
+      title: "Polish faruri",
+      before: {
+        src: "/headlight-before.jpg",
+        description: "Far înainte de polish - mat, îngălbenit și zgâriat",
+      },
+      after: {
+        src: "/headlight-after.jpg",
+        description: "Far după polish - clar, strălucitor și ca nou",
       },
     },
   ];

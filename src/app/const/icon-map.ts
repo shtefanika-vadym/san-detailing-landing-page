@@ -3,6 +3,7 @@ import {
   Award,
   Car,
   Crown,
+  Droplets,
   LucideProps,
   Shield,
   Sparkles,
@@ -23,4 +24,5 @@ export const SERVICES_ICON_MAP: Record<
   Sparkles,
   Shield,
   Paintbrush,
+  Droplets,
 };

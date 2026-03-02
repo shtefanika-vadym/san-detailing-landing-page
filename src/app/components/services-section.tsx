@@ -186,8 +186,14 @@ export function ServicesSection() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             {combined.map((pkg, index: number) => {
               const Icon = getServiceIcon(pkg.icon);
+              const isLast = index === combined.length - 1;
               return (
-                <Link key={index} href={`/servicii/${pkg.slug}`} passHref>
+                <Link
+                  key={index}
+                  href={`/servicii/${pkg.slug}`}
+                  passHref
+                  className={isLast ? "lg:col-start-2" : ""}
+                >
                   <Card
                     className="bg-san-gray border-san-metallic/20 hover:border-san-red/50 h-full transform cursor-pointer transition-all duration-300 hover:scale-105"
                     onMouseEnter={() => setHoveredPackage(`int-${index}`)}
@@ -207,26 +213,47 @@ export function ServicesSection() {
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-4">
+                        {pkg.services && (
+                          <ul className="text-san-metallic space-y-2 text-sm">
+                            {pkg.services.map((service, idx: number) => (
+                              <li key={idx} className="flex items-start">
+                                <span className="text-san-red mr-2">•</span>
+                                {service.name}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                         <div className="border-san-metallic/20 space-y-2 border-t pt-4 text-center">
                           <div className="font-semibold text-white">
-                            <div>
-                              Hatchback:{" "}
-                              <span className="text-san-red">
-                                {pkg.pricing.hatchback}
-                              </span>
-                            </div>
-                            <div>
-                              Coupe/Sedan/Break:{" "}
-                              <span className="text-san-red">
-                                {pkg.pricing.sedan}
-                              </span>
-                            </div>
-                            <div>
-                              SUV:{" "}
-                              <span className="text-san-red">
-                                {pkg.pricing.suv}
-                              </span>
-                            </div>
+                            {pkg.price ? (
+                              <div>
+                                Preț:{" "}
+                                <span className="text-san-red">
+                                  {pkg.price}
+                                </span>
+                              </div>
+                            ) : (
+                              <>
+                                <div>
+                                  Hatchback:{" "}
+                                  <span className="text-san-red">
+                                    {pkg.pricing?.hatchback}
+                                  </span>
+                                </div>
+                                <div>
+                                  Coupe/Sedan/Break:{" "}
+                                  <span className="text-san-red">
+                                    {pkg.pricing?.sedan}
+                                  </span>
+                                </div>
+                                <div>
+                                  SUV:{" "}
+                                  <span className="text-san-red">
+                                    {pkg.pricing?.suv}
+                                  </span>
+                                </div>
+                              </>
+                            )}
                           </div>
                         </div>
                       </div>

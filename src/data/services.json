@@ -135,6 +135,28 @@
         "description": "Pachet Gold: cel mai complet detailing interior și exterior, rezultate premium în Suceava.",
         "keywords": "detailing gold, pachet interior exterior, detailing Suceava, polish auto, curățare interior"
       }
+    },
+    {
+      "slug": "fresh",
+      "title": "PACHET FRESH",
+      "icon": "Droplets",
+      "services": [
+        { "name": "Spălare detaliată", "desc": "Spălare completă și detaliată a caroseriei, inclusiv zone greu accesibile.", "category": "Exterior" },
+        { "name": "Decontaminare chimică", "desc": "Îndepărtarea contaminanților chimici de pe suprafața vopselei pentru o curățare profundă.", "category": "Exterior" },
+        { "name": "Aplicare ceară solidă", "desc": "Protecție și luciu de durată pentru vopsea.", "category": "Exterior" },
+        { "name": "Aplicare dressing cauciucuri", "desc": "Cauciucuri protejate și cu aspect reîmprospătat.", "category": "Exterior" },
+        { "name": "Aspirare", "desc": "Aspirare completă a habitaclului și portbagajului.", "category": "Interior" },
+        { "name": "Curățare scaune și banchetă", "desc": "Curățare profundă a scaunelor și banchetei.", "category": "Interior" },
+        { "name": "Curățare plastice", "desc": "Curățare detaliată a tuturor suprafețelor plastice interioare.", "category": "Interior" },
+        { "name": "Aplicare dressing plastice", "desc": "Protecție și aspect reîmprospătat pentru elementele plastice interioare.", "category": "Interior" },
+        { "name": "Hidratare piele", "desc": "Tratament de hidratare și condiționare pentru suprafețele din piele.", "category": "Interior" }
+      ],
+      "price": "600 lei",
+      "seo": {
+        "title": "Pachet Fresh – Detailing Complet Suceava | San Detailing",
+        "description": "Pachetul Fresh include spălare detaliată, decontaminare chimică, ceară solidă și curățare completă interior. Servicii profesionale în Suceava!",
+        "keywords": "pachet fresh, detailing Suceava, spălare auto, ceară auto, curățare interior, detailing complet Suceava"
+      }
     }
   ],
   "interior": [

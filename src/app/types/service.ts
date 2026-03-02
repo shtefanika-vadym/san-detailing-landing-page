@@ -18,7 +18,7 @@ export type ServicePriceType = {
 
 export type ServiceWithServicesType = ServiceBaseType & {
   duration?: string;
-  services: { name: string; desc?: string }[];
+  services: { name: string; desc?: string; category?: string }[];
   pricing: ServicePriceType;
 };
 
@@ -30,5 +30,11 @@ export type ServicesDataType = {
   exterior: ServiceWithServicesType[];
   interior: ServiceWithServicesType[];
   separate: ServiceSeparateType[];
-  combined: Array<ServiceBaseType & { pricing: ServicePriceType }>;
+  combined: Array<
+    ServiceBaseType & {
+      pricing?: ServicePriceType;
+      price?: string;
+      services?: { name: string; desc?: string; category?: string }[];
+    }
+  >;
 };
