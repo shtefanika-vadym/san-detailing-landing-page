@@ -110,28 +110,6 @@ export function GallerySection() {
           "Portbagaj curățat și organizat după procesul de detailing",
       },
     },
-    {
-      title: "Curățare interior",
-      before: {
-        src: "/bord-jum.jpeg",
-        description: "Torpedou plin și murdar înainte de curățare",
-      },
-      after: {
-        src: "/cap-jum.jpeg",
-        description: "Cotieră curățată după procesul de detailing",
-      },
-    },
-    {
-      title: "Polish faruri",
-      before: {
-        src: "/headlight-before.jpg",
-        description: "Far înainte de polish - mat, îngălbenit și zgâriat",
-      },
-      after: {
-        src: "/headlight-after.jpg",
-        description: "Far după polish - clar, strălucitor și ca nou",
-      },
-    },
   ];
 
   function nextImage() {

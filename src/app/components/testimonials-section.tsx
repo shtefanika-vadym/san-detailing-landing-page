@@ -9,7 +9,24 @@ export function TestimonialsSection() {
       location: "Suceava",
       rating: 5,
       text: "Rezultatul final a fost excepțional – toate imperfecțiunile vizibile au fost complet eliminate, iar mașina arată ca nouă. Sunt 100% mulțumit și recomand cu toată încrederea San Detailing tuturor celor care își doresc ca mașina lor să arate din nou perfect!",
-      service: "Pachet Gold Exterior + Interior",
+    },
+    {
+      name: "Nicu Zamari",
+      location: "Suceava",
+      rating: 5,
+      text: "Am adus un BMW seria 3 la SAN Detailing pentru un polish la faruri și pentru aplicarea foliei de protecție PPF și am rămas super mulțumit de profesionalismul de care au dat dovadă băieți și de cât de bine și-au executat munca. Cu siguranță mai revin!",
+    },
+    {
+      name: "Gigi Sopon",
+      location: "Suceava",
+      rating: 5,
+      text: "San detailing ,servicii de calitate..Merita banii!",
+    },
+    {
+      name: "Cosmin Sfichi",
+      location: "Suceava",
+      rating: 5,
+      text: "Extraordinar de multumit de promtitudine, profesionalism si devotare!!! Voi reveni cu siguranta!! Recomand 100%",
     },
   ];
 
@@ -56,9 +73,6 @@ export function TestimonialsSection() {
                       </h4>
                       <p className="text-san-metallic text-sm">
                         {testimonial.location}
-                      </p>
-                      <p className="text-san-red mt-1 text-sm font-medium">
-                        {testimonial.service}
                       </p>
                     </div>
                   </div>
