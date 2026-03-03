@@ -47,7 +47,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ro">
-      <GoogleTagManager gtmId="GTM-PS2DQQHK" />
+      <GoogleTagManager gtmId="G-KB4RDLVRV2" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
